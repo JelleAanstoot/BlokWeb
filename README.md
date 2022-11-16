@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepage stadscafe  
+<img src="readme-images/Homepage_plaatje.PNG" width="375px" alt="Homepage stadscafe"> 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
- <img src="readme-images/Homepage_plaatje.PNG" width="375px" alt="Homepage stadscafe"> 
+  Berichten pagina stadscare  
+ 
 <img src="readme-images/Berichten_plaatje.PNG" width="375px" alt="Berichten stadscafe">
  
 
