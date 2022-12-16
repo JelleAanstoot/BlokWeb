@@ -60,12 +60,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - Juiste html semantiek gebruiken
+  - geen div's
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -77,13 +79,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  niet te besturen, omdat er veel met de muis gedaan moet worden
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - Dit werkt wel, contrast is goed
 </details>
 
 
@@ -116,18 +119,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | dit bespreken  | en dit             | en ik dit    |  in de footer van    mijn                                                   website staat een 
+  heading, welke h1/h2/h3 geef ik deze mee?    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  hier na afloop snel de uitkomsten van de meeting vastleggen:
+  Ik heb feedback gekregen op mijn code, voornamelijk mijn HTML. De feedback die ik kreeg was voornamelijk op de semantiek.
+  
+  - Ik heb buttons gebruikt, waar ik een link moet gebruiken
+  - Ik heb <br> gebruikt, dit heb ik aangepast door verschillende paragrafen te gebruiken, en line-height mee te geven in de css
 
 </details>
 
@@ -149,7 +152,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | dit bespreken  | en dit             | en ik dit    | Zorgen dat mijn menu sluit    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -157,9 +160,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - button.addEventListener("click", menuOpen)
+
+
+function menuOpen() {
+    nav.classList.toggle("menuOpen")
+}
 - ...
 
 </details>
@@ -219,18 +225,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | dit bespreken  | en dit             | en ik dit    | Ik krijg mijn blokken niet goed geordend.|
+  | en dat ook nog | dit als er tijd is | nog een punt | |
+  | ...            | ...                | ...          | |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Grid gebruiken, hier heb ik wat uitleg over gekregen
 
 </details>
 
@@ -248,17 +251,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd om mijn blokken op te delen in een gridje. Ik heb gebruik gemaakt van rrn grid, met een auto-fit en een minmax.( grid-template-columns: repeat(auto-fit, minmax(23.61111111111111em, 1fr)); )
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+ - Transitie hamburger menu spans
+ - Scroll behavior
+ - Blok reviews
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
-
+ Het is me niet gelukt om de transitie van mijn hamburger menu te laten werken. Ook is het me niet gelukt om 	scroll-behavior te laten werken, het gaat nu direct zonder mooie scroll-flow.
+  Ook is het me niet gelukt om de reviews in de desktop versie breed te maken, het is nu inline flex, maar blijft even breed als de rest van de blokken. Terwijl dit op de voorbeeld website wel een breder blok is.
 
 
 
@@ -270,8 +275,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
+  1. https://codepen.io/shooft/pen/jOMOroZ 
+  <!-- voor het hamburger menu -->
+  2. https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+  <!-- voor het uitwerken van mijn em wat niet lukte -->
   3. ...
 
 </details>

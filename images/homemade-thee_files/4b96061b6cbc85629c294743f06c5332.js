@@ -1,0 +1,2 @@
+(function(){"use strict";jQuery(document).ready(function(){jQuery(function(){jQuery("#motif-tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix")});jQuery(".motif_button_setting").on('click',function(e){jQuery(".wordpress-ajax-form").submit(e.preventDefault());var formData=jQuery(".wordpress-ajax-form").serialize();jQuery(".motif_loading").show();jQuery.ajax({url:wnyp_ajaxnum.Ajaxurl,type:'POST',data:{action:'wnyp_product_render_callback',data:formData},success:function(response){jQuery(".motif_loading").hide()}})})})})()
+;

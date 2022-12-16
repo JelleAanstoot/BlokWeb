@@ -1,0 +1,2 @@
+(function(){"use strict";jQuery(document).ready(function(){jQuery("#wnyp_amount").on("click",function(n){jQuery(this).val("")}).focusout(function(){var n=jQuery(this).val();if(""==n){var t=jQuery(this).data("suggest_price");jQuery(this).val(t)}})})})()
+;
